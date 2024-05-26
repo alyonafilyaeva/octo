@@ -1,0 +1,113 @@
+.slider {
+    display: flex;
+    justify-content: start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.alice-carousel__stage-item {
+    width: 33.2% !important;
+    padding: 20px !important;
+}
+
+.slider .card {
+    width: 90%;
+    height: 100%;
+    border: solid #D3D8E4;
+    border-width: 1px;
+    padding: 1em;
+    position: relative;
+}
+.next {
+    position: "absolute" !important;
+    left: 35px;
+    top: 540px;
+    cursor: pointer;
+}
+
+.prev {
+    position: "absolute" !important;
+    left: 105px;
+    top: 540px;
+    cursor: pointer;
+}
+
+.alice-carousel__dots {
+    display: none !important;
+}
+
+.alice-carousel__prev-btn {
+    width: auto !important;
+    margin-top: 40px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .slider {
+        display: flex;
+        justify-content: center;
+    }
+    .alice-carousel__stage-item {
+        width: 50% !important;
+        padding: 20px !important;
+    }
+    .slider .alice-carousel__stage-item:nth-child(2) {
+        display: none;
+    }
+
+    .slider .alice-carousel__stage-item:nth-last-child() {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .slider {
+        padding: 60px 0;
+    }
+    .alice-carousel__stage-item {
+        width: 50% !important;
+        padding: 20px !important;
+    }
+    .alice-carousel__stage-item .__active .__target {
+        width: 30% !important;
+    }
+    .alice-carousel__prev-btn {
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .slider {
+        padding: 50px 0;
+    }
+    .alice-carousel__stage-item {
+        width: 50% !important;
+        padding: 20px !important;
+    }
+    .alice-carousel__stage-item .__active .__target {
+        width: 30% !important;
+    }
+    .alice-carousel__prev-btn {
+        width: auto !important;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider {
+        padding: 50px 0;
+    }
+    .alice-carousel__stage-item {
+        width: 100% !important;
+        padding: 20px !important;
+    }
+    .alice-carousel__stage-item .__active .__target {
+        width: 30% !important;
+    }
+    .alice-carousel__prev-btn {
+        margin-left: 42%;
+        margin-top: 20px;
+    }
+
+}

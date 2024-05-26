@@ -1,0 +1,200 @@
+.main .card {
+    width: 26%;
+    height: 100%;
+    border: solid #D3D8E4;
+    border-width: 1px;
+    padding: 1em;
+    position: relative;
+}
+
+.label {
+    background-color: #00B6DD;
+    width: auto;
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    padding: 6px 15px 8px 16px;
+}
+
+.label p {
+    font-size: 0.6em;
+    color: #FFF;
+}
+
+.picture {
+    height: 7em;
+    margin-bottom: 20px;
+}
+
+.name {
+    /* color: #00B6DD; */
+    font-size: 0.8em;
+    width: auto;
+}
+
+.card_title {
+    font-size: 22px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.card button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    color: #FFF;
+    font-size: 13px;
+cursor: pointer;}
+
+.turquoise {
+    background-color: #00B6DD;
+}
+
+.blue {
+    background-color: #081580;
+}
+
+.grey {
+    background-color: #D3D8E4;
+}
+
+.pink {
+    background-color: #FF779A;
+}
+
+.tree {
+    background-image: url(../../../public/imgs/card_tree.png);
+    background-size: cover;
+}
+
+.canon {
+    background-image: url(../../../public/imgs/canon.png);
+    background-size: cover;
+}
+.name_turquoise {
+    color: #00B6DD;
+}
+
+.name_blue {
+    color: #081580;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .main .card {
+        width: 43%;
+    }
+
+    .picture {
+        height: 9em;
+    }
+
+    .card_title {
+        font-size: 20px;
+    }
+
+    .main .card:nth-child(2) {
+        display: none;
+    }
+
+    .main .card:last-child {
+        display: none;
+    }
+
+    .canon {
+        background-color: #010101;
+        background-image: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .main .card {
+        width: 40%;
+        margin: 1%;
+    }
+
+    .label p {
+        font-size: 12px;
+    }
+
+    .picture {
+        height: 7em;
+    }
+
+    .card_title {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .main .card:nth-child(2) {
+        display: none;
+    }
+
+    .main .card:last-child {
+        display: none;
+    }
+
+    .canon {
+        background-color: #010101;
+        background-image: none;
+    }
+
+    .card button {
+        width: 140px;
+        height: 36px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .main .card {
+        width: 40%;
+    }
+
+    .main .card:nth-child(2) {
+        display: none;
+    }
+
+    .main .card:last-child {
+        display: none;
+    }
+
+    .canon {
+        background-color: #010101;
+        background-image: none;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .main .card {
+        width: 100%;
+    }
+
+    .picture {
+        height: 8em;
+    }
+
+    .main .card:nth-child(2) {
+        display: none;
+    }
+
+    .main .card:last-child {
+        display: none;
+    }
+    .main .card:nth-child(4) {
+        display: none;
+    }
+
+    .main .card:nth-child(5) {
+        display: none;
+    }
+
+}

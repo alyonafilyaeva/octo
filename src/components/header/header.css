@@ -1,0 +1,52 @@
+.background {
+    background-color: #010101;
+    height: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background img {
+    opacity: 0.6;
+    object-fit: none;
+    height: 396px;
+    width: 100%;
+}
+
+.title {
+    color: #FFF;
+    position: absolute;
+    z-index: 10;
+    font-size: 62px;
+    font-weight: 600;
+    text-align: center;  
+    font-family: 'Noto Sans';
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .background, .background img {
+        height: 340px;
+    }
+    .title {
+        font-size: 54px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .background, .background img {
+        height: 275px;
+    }
+    .title {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .background, .background img {
+        height: 236px;
+    }
+    .title {
+        font-size: 46px;
+    }
+}
